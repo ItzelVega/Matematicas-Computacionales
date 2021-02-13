@@ -1,17 +1,3 @@
-#LINEA RECTA CON PUNTOS
-m <- 3 #pendiente
-b <- 2 #interseccion
-
-#funcion de la linea recta
-f <- function (m, b, x){
-  return (m * x + b)
-}
-
-x <- seq (-5, 5, 1)#vector de -5 a 5
-y <- f(m, b, x) #evaluamos
-
-plot(x, y) #graficamos
-
 #LINEA RECTA
 m <- 3 #pendiente
 b <- 2 #interseccion
@@ -27,16 +13,65 @@ y <- f(m, b, x) #evaluamos
 plot (x, y, type = "l", xlab = "Eje X", ylab = " Eje Y") #graficamos
 abline (h = 0, v = 0) #una linea horizontal que pasa por el 0 en las x y una linea vertical que pasa por el 0 en las y
 
+m <- -3/2 #pendiente
+b <- -5 #interseccion
+
+# funcion de la linea recta
+p <- function (m, b, x){
+  return (m * x + b)
+}
+
+x <- seq (-4, 4, 0.01) #vector de -4 a 4
+y <- p(m, b, x) #evaluamos
+
+plot (x, y, type = "l", xlab = "Eje X", ylab = " Eje Y") #graficamos
+abline (h = 0, v = 0) #una linea horizontal que pasa por el 0 en las x y una linea vertical que pasa por el 0 en las y
+
+m <- -2 #pendiente
+b <- 8 #interseccion
+
+# funcion de la linea recta
+d <- function (m, b, x){
+  return (m * x + b)
+}
+
+x <- seq (-5, 5, 0.01) #vector de -5 a 5
+y <- d(m, b, x) #evaluamos
+
+plot (x, y, type = "l", xlab = "Eje X", ylab = " Eje Y") #graficamos
+abline (h = 0, v = 0) #una linea horizontal que pasa por el 0 en las x y una linea vertical que pasa por el 0 en las y
+
+
 #PARABOLA
 g <- function (x){
   return (2*x^2 + x - 2)
 }
 
-x <- seq (-5, 5, 0.01) # vector de -5 a 5
+x <- seq (-5, 5, 0.01) #vector de -5 a 5
 y <- g(x)
 
-plot (x, y, type = "l", xlab = "Eje X", ylab = " Eje Y") # graficamos
-abline (h = 0, v = 0) # una linea horizontal que pasa por el 0 en las x y una linea vertical que pasa por el 0 en las y
+plot (x, y, type = "l", xlab = "Eje X", ylab = "Eje Y") #graficamos
+abline (h = 0, v = 0) #una linea horizontal que pasa por el 0 en las x y una linea vertical que pasa por el 0 en las y
+
+h <- function (x){
+  return (x^2 - 4*x + 3)
+}
+
+x <- seq (-6, 10, 0.01) #vector de -6 a 10
+y <- h(x)
+
+plot (x, y, type = "l", xlab = "Eje X", ylab = "Eje Y") #graficamos
+abline (h = 0, v = 0) #una linea horizontal que pasa por el 0 en las x y una linea vertical que pasa por el 0 en las y
+
+b <- function (x){
+  return (-2*x^2 - 1)
+}
+
+x <- seq (-3, 3, 0.01) # vector de -3 a 3
+y <- b(x)
+
+plot (x, y, type = "l", xlab = "Eje X", ylab = "Eje Y") #graficamos
+abline (h = 0, v = 0) #una linea horizontal que pasa por el 0 en las x y una linea vertical que pasa por el 0 en las y
 
 #CIRCUNFERENCIA
 circunferencia <- function (h, k, r){
@@ -63,6 +98,56 @@ circunferencia <- function (h, k, r){
 
 #ejecutamos la funcion
 circunferencia (1, 3, 2)
+
+circunferencia2 <- function (h, k, r){
+  if(r >= 0){ #r tiene que ser positivo
+    if(r == 0){ #si es r = 0, entonces es un punto
+      plot(x = h, y = k, xlab = " Eje X", ylab = "Eje Y") #grafica del punto
+    } else {
+      x <- seq(h - r, h + r, 0.01) #ya que no podemos graficar en todo R^2
+      ypositiva <- k + sqrt(r^2 - ((x - h) ^2)) #parte positiva de la circunferencia
+      ynegativa <- k - sqrt(r^2 - ((x - h) ^2)) #parte negativa de la circunferencia
+      #graficamos primero la parte positiva
+      
+      plot(x, ypositiva , type = "l", xlim = c(h - (r + 1) , h + (r + 1)), ylim = c(k - (r + 1) ,k + (r + 1)),
+           
+           xlab = "Eje X", ylab = "Eje Y")
+      lines(x, ynegativa , type = "l") #agregamos la parte negativa
+      abline(h = 0, v = 0) #agregamos los ejes
+      points(x = h, y = k, col = "red") #dibujamos el centro
+    }
+  } else{
+    return(print("El radio no es positivo ."))
+  }
+}
+
+#ejecutamos la funcion
+circunferencia2 (-1, 2, 3)
+
+circunferencia3 <- function (h, k, r){
+  if(r >= 0){ #r tiene que ser positivo
+    if(r == 0){ #si es r = 0, entonces es un punto
+      plot(x = h, y = k, xlab = " Eje X", ylab = "Eje Y") #grafica del punto
+    } else {
+      x <- seq(h - r, h + r, 0.01) #ya que no podemos graficar en todo R^2
+      ypositiva <- k + sqrt(r^2 - ((x - h) ^2)) #parte positiva de la circunferencia
+      ynegativa <- k - sqrt(r^2 - ((x - h) ^2)) #parte negativa de la circunferencia
+      #graficamos primero la parte positiva
+      
+      plot(x, ypositiva , type = "l", xlim = c(h - (r + 1) , h + (r + 1)), ylim = c(k - (r + 1) ,k + (r + 1)),
+           
+           xlab = "Eje X", ylab = "Eje Y")
+      lines(x, ynegativa , type = "l") #agregamos la parte negativa
+      abline(h = 0, v = 0) #agregamos los ejes
+      points(x = h, y = k, col = "red") #dibujamos el centro
+    }
+  } else{
+    return(print("El radio no es positivo ."))
+  }
+}
+
+#ejecutamos la funcion
+circunferencia3 (1/2, 2/3, 2)
 
 #ELIPSE 
 elipse <- function (h, k, a, b, horizontal ){
@@ -96,6 +181,71 @@ elipse <- function (h, k, a, b, horizontal ){
 }
 
 elipse (1, 2, 16, 9, T)
+
+elipse2 <- function (h, k, a, b, horizontal ){
+  if(a > b){ #a tiene que ser mayor que b
+    c <- sqrt (a^2 - b^2) #calculamos c
+    if( horizontal ){ #si es una elipse horizontal
+      x <- seq(h - a, h + a, 0.01) #definimos el dominio
+      ypositiva <- k + sqrt((b^2 - (b^2/a^2) * ((x - h) ^2) )) #parte positiva
+      ynegativa <- k - sqrt((b^2 - (b^2/a^2) * ((x - h) ^2) )) #parte negativa
+      #graficamos primero la parte positiva
+      
+      plot (x, ypositiva , type = "l", xlim = c(h - (a + 1) , h + (a + 1)), ylim = c(k - (b + 1) ,k + (b + 1)))
+      
+      lines(x, ynegativa , type = "l") #agregamos la parte negativa
+      abline(h = 0, v = 0) #ejes coordenados
+      points(x = c(h - c, h + c), y = c(k, k), col = "red") #focos
+    } else {
+      x <- seq(h - b, h + b, 0.01)
+      ypositiva <- k + sqrt ((a^2 - (a^2/b^2) * ((x - h) ^2) ))
+      ynegativa <- k - sqrt ((a^2 - (a^2/b^2) * ((x - h) ^2) ))
+      
+      plot(x, ypositiva , type = "l", xlim = c(h - (b + 1) , h + (b + 1)), ylim = c(k - (a + 1) ,k + (a + 1)))
+      
+      lines(x, ynegativa , type = "l")
+      abline(h = 0, v = 0)
+      points(x = c(h, h), y = c(k - c, k + c), col = "red")
+    }
+  } else {
+    return(print("No cumple las condiciones para ser una elipse . (a no es mayor que b)"))
+  }
+}
+
+elipse2 (-3, 1, 2, 1, T)
+
+elipse3 <- function (h, k, a, b, horizontal ){
+  if(a > b){ #a tiene que ser mayor que b
+    c <- sqrt (a^2 - b^2) #calculamos c
+    if( horizontal ){ #si es una elipse horizontal
+      x <- seq(h - a, h + a, 0.01) #definimos el dominio
+      ypositiva <- k + sqrt((b^2 - (b^2/a^2) * ((x - h) ^2) )) #parte positiva
+      ynegativa <- k - sqrt((b^2 - (b^2/a^2) * ((x - h) ^2) )) #parte negativa
+      #graficamos primero la parte positiva
+      
+      plot (x, ypositiva , type = "l", xlim = c(h - (a + 1) , h + (a + 1)), ylim = c(k - (b + 1) ,k + (b + 1)))
+      
+      lines(x, ynegativa , type = "l") #agregamos la parte negativa
+      abline(h = 0, v = 0) #ejes coordenados
+      points(x = c(h - c, h + c), y = c(k, k), col = "red") #focos
+    } else {
+      x <- seq(h - b, h + b, 0.01)
+      ypositiva <- k + sqrt ((a^2 - (a^2/b^2) * ((x - h) ^2) ))
+      ynegativa <- k - sqrt ((a^2 - (a^2/b^2) * ((x - h) ^2) ))
+      
+      plot(x, ypositiva , type = "l", xlim = c(h - (b + 1) , h + (b + 1)), ylim = c(k - (a + 1) ,k + (a + 1)))
+      
+      lines(x, ynegativa , type = "l")
+      abline(h = 0, v = 0)
+      points(x = c(h, h), y = c(k - c, k + c), col = "red")
+    }
+  } else {
+    return(print("No cumple las condiciones para ser una elipse . (a no es mayor que b)"))
+  }
+}
+
+elipse3 (1, -2, 4, 2, F)
+
 
 #HIPERBOLA
 hiperbola <- function (h, k, a, b, horizontal ){
