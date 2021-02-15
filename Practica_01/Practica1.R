@@ -254,23 +254,122 @@ hiperbola <- function (h, k, a, b, horizontal ){
     xizq <- seq(h - (a + 3) , h - a, 0.01) #dominio izquierdo
     xder <- seq(h + a, h + (a + 3) , 0.01) #dominio derecho
     yizqpositiva <- k + sqrt((b^2/a^2) *(( xizq - h) ^2) - b^2) #parte positiva del dominio izquierdo
+    yderpositiva <- k + sqrt((b^2/a^2) *(( xder - h) ^2) - b^2)
     yizqnegativa <- k - sqrt((b^2/a^2) *(( xizq - h) ^2) - b^2) #parte negativa del dominio izquierdo
+    ydernegativa <- k - sqrt((b^2/a^2) *(( xder - h) ^2) - b^2)
     #graficamos la parte positiva del dominio izquierdo
     
-    plot(xizq , yizqpositiva , type = "l", xlim = c(h - (a + 4) , h + (a + 4)), ylim = c(k - (b + 4) , k + (b + 4)))
+    plot(xizq , yizqpositiva , type = "l", xlim = c(h - (a + 4) , h + (a + 4)), ylim = c(k - (b + 4) , k + (b + 4)),
+         xlab = "Eje X", ylab = "Eje Y")
+    #plot(xder , yderpositiva , type = "l",xlim = c(h - (a + 4) , h + (a + 4)), ylim = c(k - (b + 4) , k + (b + 4)))
+    
     lines(xizq , yizqnegativa , type = "l") #agregamos parte negativa del dominio izquierdo
+    lines(xder , ydernegativa , type = "l")
+    lines(xder , yderpositiva , type = "l")
+    lines(xizq , yizqpositiva , type = "l")
     abline(h = 0, v = 0) #ejes coordenados
   } else { #hiperbola sobre el eje y
     yizq <- seq(k - (a + 3) , k - a, 0.01) #rango inferior
     yder <- seq(k + a, k + (a + 3) , 0.01) #rango superior
     xizqpositiva <- h + sqrt((b^2/a^2) *(( yizq - k) ^2) - b^2) #parte positiva del rango inferior
+    Xderpositiva <- h + sqrt((b^2/a^2) *(( yder - k) ^2) - b^2) 
     xizqnegativa <- h - sqrt((b^2/a^2) *(( yizq - k) ^2) - b^2) #parte negativa del rango superior
+    Xdernegativa <- h - sqrt((b^2/a^2) *(( yder - k) ^2) - b^2)
     # graficamos
     
-    plot( xizqpositiva , yizq , type = "l", xlim = c(h - (b + 4) , h + (b + 4)), ylim = c(k - (a + 4) , k + (a + 4)))
+    plot( xizqpositiva , yizq , type = "l", xlim = c(h - (b + 4) , h + (b + 4)), ylim = c(k - (a + 4) , k + (a + 4)),
+          ylab = "Eje Y", xlab = "Eje X")
+    
     lines( xizqnegativa , yizq , type = "l")
+    lines( Xdernegativa , yder , type = "l")
+    lines( xizqpositiva , yizq , type = "l")
+    lines( Xderpositiva , yder , type = "l")
     abline(h = 0, v = 0)
   }
 }
 
 hiperbola (1, 2, 2, 3, T)
+
+hiperbola2 <- function (h, k, a, b, horizontal ){
+  c <- sqrt (a^2 + b^2) #calculamos c
+  if( horizontal ){ #hiperbola sobre el eje x
+    xizq <- seq(h - (a + 3) , h - a, 0.01) #dominio izquierdo
+    xder <- seq(h + a, h + (a + 3) , 0.01) #dominio derecho
+    yizqpositiva <- k + sqrt((b^2/a^2) *(( xizq - h) ^2) - b^2) #parte positiva del dominio izquierdo
+    yderpositiva <- k + sqrt((b^2/a^2) *(( xder - h) ^2) - b^2)
+    yizqnegativa <- k - sqrt((b^2/a^2) *(( xizq - h) ^2) - b^2) #parte negativa del dominio izquierdo
+    ydernegativa <- k - sqrt((b^2/a^2) *(( xder - h) ^2) - b^2)
+    #graficamos la parte positiva del dominio izquierdo
+    
+    plot(xizq , yizqpositiva , type = "l", xlim = c(h - (a + 4) , h + (a + 4)), ylim = c(k - (b + 4) , k + (b + 4)),
+         xlab = "Eje X", ylab = "Eje Y")
+    #plot(xder , yderpositiva , type = "l",xlim = c(h - (a + 4) , h + (a + 4)), ylim = c(k - (b + 4) , k + (b + 4)))
+    
+    lines(xizq , yizqnegativa , type = "l") #agregamos parte negativa del dominio izquierdo
+    lines(xder , ydernegativa , type = "l")
+    lines(xder , yderpositiva , type = "l")
+    lines(xizq , yizqpositiva , type = "l")
+    abline(h = 0, v = 0) #ejes coordenados
+  } else { #hiperbola sobre el eje y
+    yizq <- seq(k - (a + 3) , k - a, 0.01) #rango inferior
+    yder <- seq(k + a, k + (a + 3) , 0.01) #rango superior
+    xizqpositiva <- h + sqrt((b^2/a^2) *(( yizq - k) ^2) - b^2) #parte positiva del rango inferior
+    Xderpositiva <- h + sqrt((b^2/a^2) *(( yder - k) ^2) - b^2) 
+    xizqnegativa <- h - sqrt((b^2/a^2) *(( yizq - k) ^2) - b^2) #parte negativa del rango superior
+    Xdernegativa <- h - sqrt((b^2/a^2) *(( yder - k) ^2) - b^2)
+    # graficamos
+    
+    plot( xizqpositiva , yizq , type = "l", xlim = c(h - (b + 4) , h + (b + 4)), ylim = c(k - (a + 4) , k + (a + 4)),
+          ylab = "Eje Y", xlab = "Eje X")
+    
+    lines( xizqnegativa , yizq , type = "l")
+    lines( Xdernegativa , yder , type = "l")
+    lines( xizqpositiva , yizq , type = "l")
+    lines( Xderpositiva , yder , type = "l")
+    abline(h = 0, v = 0)
+  }
+}
+
+hiperbola2 (5, -5, 4, 3, F)
+
+hiperbola3 <- function (h, k, a, b, horizontal ){
+  c <- sqrt (a^2 + b^2) #calculamos c
+  if( horizontal ){ #hiperbola sobre el eje x
+    xizq <- seq(h - (a + 3) , h - a, 0.01) #dominio izquierdo
+    xder <- seq(h + a, h + (a + 3) , 0.01) #dominio derecho
+    yizqpositiva <- k + sqrt((b^2/a^2) *(( xizq - h) ^2) - b^2) #parte positiva del dominio izquierdo
+    yderpositiva <- k + sqrt((b^2/a^2) *(( xder - h) ^2) - b^2)
+    yizqnegativa <- k - sqrt((b^2/a^2) *(( xizq - h) ^2) - b^2) #parte negativa del dominio izquierdo
+    ydernegativa <- k - sqrt((b^2/a^2) *(( xder - h) ^2) - b^2)
+    #graficamos la parte positiva del dominio izquierdo
+    
+    plot(xizq , yizqpositiva , type = "l", xlim = c(h - (a + 4) , h + (a + 4)), ylim = c(k - (b + 4) , k + (b + 4)),
+         xlab = "Eje X", ylab = "Eje Y")
+    #plot(xder , yderpositiva , type = "l",xlim = c(h - (a + 4) , h + (a + 4)), ylim = c(k - (b + 4) , k + (b + 4)))
+    
+    lines(xizq , yizqnegativa , type = "l") #agregamos parte negativa del dominio izquierdo
+    lines(xder , ydernegativa , type = "l")
+    lines(xder , yderpositiva , type = "l")
+    lines(xizq , yizqpositiva , type = "l")
+    abline(h = 0, v = 0) #ejes coordenados
+  } else { #hiperbola sobre el eje y
+    yizq <- seq(k - (a + 3) , k - a, 0.01) #rango inferior
+    yder <- seq(k + a, k + (a + 3) , 0.01) #rango superior
+    xizqpositiva <- h + sqrt((b^2/a^2) *(( yizq - k) ^2) - b^2) #parte positiva del rango inferior
+    Xderpositiva <- h + sqrt((b^2/a^2) *(( yder - k) ^2) - b^2) 
+    xizqnegativa <- h - sqrt((b^2/a^2) *(( yizq - k) ^2) - b^2) #parte negativa del rango superior
+    Xdernegativa <- h - sqrt((b^2/a^2) *(( yder - k) ^2) - b^2)
+    # graficamos
+    
+    plot( xizqpositiva , yizq , type = "l", xlim = c(h - (b + 4) , h + (b + 4)), ylim = c(k - (a + 4) , k + (a + 4)),
+          ylab = "Eje Y", xlab = "Eje X")
+    
+    lines( xizqnegativa , yizq , type = "l")
+    lines( Xdernegativa , yder , type = "l")
+    lines( xizqpositiva , yizq , type = "l")
+    lines( Xderpositiva , yder , type = "l")
+    abline(h = 0, v = 0)
+  }
+}
+
+hiperbola3 (2, 2, 3, 1, T)
