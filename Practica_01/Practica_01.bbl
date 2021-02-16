@@ -1,8 +1,13 @@
 \begin{thebibliography}{1}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\bibitem{geometria}
+\bibitem[Lehmann(1965)]{geometria}
 Charles~H Lehmann.
-\newblock {\em Geometr\'ia analítica}.
+\newblock \emph{Geometr\'ia analítica}.
 \newblock LIMUSA, 1965.
 
 \end{thebibliography}

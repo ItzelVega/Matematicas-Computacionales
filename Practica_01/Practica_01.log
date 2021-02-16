@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2021.2.12)  14 FEB 2021 21:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2021.2.12)  15 FEB 2021 20:54
 entering extended mode
 **./Practica_01.tex
 (Practica_01.tex
@@ -308,56 +308,56 @@ Package pdftex.def Info: Recta3.png  used on input line 66.
 <Parabola2.png, id=15, 391.4625pt x 240.9pt>
 File: Parabola2.png Graphic file (type png)
 <use Parabola2.png>
-Package pdftex.def Info: Parabola2.png  used on input line 77.
+Package pdftex.def Info: Parabola2.png  used on input line 76.
 (pdftex.def)             Requested size: 293.59615pt x 180.67455pt.
 <Parabola3.png, id=16, 391.4625pt x 240.9pt>
 File: Parabola3.png Graphic file (type png)
 <use Parabola3.png>
-Package pdftex.def Info: Parabola3.png  used on input line 83.
+Package pdftex.def Info: Parabola3.png  used on input line 82.
 (pdftex.def)             Requested size: 293.59615pt x 180.67455pt.
 [2 <./Recta3.png> <./Parabola2.png>]
 <Circunfe2.png, id=23, 391.4625pt x 240.9pt>
 File: Circunfe2.png Graphic file (type png)
 <use Circunfe2.png>
-Package pdftex.def Info: Circunfe2.png  used on input line 94.
+Package pdftex.def Info: Circunfe2.png  used on input line 93.
 (pdftex.def)             Requested size: 293.59615pt x 180.67455pt.
 <Circunfe3.png, id=24, 391.4625pt x 240.9pt>
 File: Circunfe3.png Graphic file (type png)
 <use Circunfe3.png>
-Package pdftex.def Info: Circunfe3.png  used on input line 100.
+Package pdftex.def Info: Circunfe3.png  used on input line 99.
 (pdftex.def)             Requested size: 293.59615pt x 180.67455pt.
- [3 <./Parabola3.png> <./Circunfe2.png>]
-<Elipse2.png, id=30, 391.4625pt x 240.9pt>
+<Elipse2.png, id=25, 391.4625pt x 240.9pt>
 File: Elipse2.png Graphic file (type png)
 <use Elipse2.png>
-Package pdftex.def Info: Elipse2.png  used on input line 111.
+Package pdftex.def Info: Elipse2.png  used on input line 109.
 (pdftex.def)             Requested size: 293.59615pt x 180.67455pt.
-<Elipse3.png, id=31, 391.4625pt x 240.9pt>
+<Elipse3.png, id=26, 391.4625pt x 240.9pt>
 File: Elipse3.png Graphic file (type png)
 <use Elipse3.png>
-Package pdftex.def Info: Elipse3.png  used on input line 117.
+Package pdftex.def Info: Elipse3.png  used on input line 115.
 (pdftex.def)             Requested size: 293.59615pt x 180.67455pt.
-<Hiperbola2.png, id=32, 391.4625pt x 240.9pt>
+ [3 <./Parabola3.png> <./Circunfe2.png>]
+[4 <./Circunfe3.png> <./Elipse2.png> <./Elipse3.png>]
+<Hiperbola2.png, id=38, 391.4625pt x 240.9pt>
 File: Hiperbola2.png Graphic file (type png)
 <use Hiperbola2.png>
 Package pdftex.def Info: Hiperbola2.png  used on input line 127.
 (pdftex.def)             Requested size: 293.59615pt x 180.67455pt.
-<Hiperbola3.png, id=33, 391.4625pt x 240.9pt>
+<Hiperbola3.png, id=39, 391.4625pt x 240.9pt>
 File: Hiperbola3.png Graphic file (type png)
 <use Hiperbola3.png>
 Package pdftex.def Info: Hiperbola3.png  used on input line 133.
 (pdftex.def)             Requested size: 293.59615pt x 180.67455pt.
-
-(Practica_01.bbl) [4 <./Circunfe3.png> <./Elipse2.png>] [5 <./Elipse3.png> <./H
-iperbola2.png> <./Hiperbola3.png>] (Practica_01.aux
+ (Practica_01.bbl)
+[5 <./Hiperbola2.png> <./Hiperbola3.png>] (Practica_01.aux
 LaTeX Info: Redefining \. on input line 9.
 LaTeX Info: Redefining \% on input line 9.
 ) ) 
 Here is how much of TeX's memory you used:
- 5445 strings out of 479616
- 81115 string characters out of 2865476
+ 5448 strings out of 479616
+ 81129 string characters out of 2865476
  561302 words of memory out of 3000000
- 22531 multiletter control sequences out of 15000+200000
+ 22534 multiletter control sequences out of 15000+200000
  413787 words of font info for 67 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  72i,8n,78p,591b,361s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -370,7 +370,7 @@ onts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/MAYG/AppData/Local/Programs/Mi
 KTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/MAYG/AppData/Local/Pro
 grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/MAYG/AppData/L
 ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Practica_01.pdf (5 pages, 115481 bytes).
+Output written on Practica_01.pdf (5 pages, 115491 bytes).
 PDF statistics:
  70 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

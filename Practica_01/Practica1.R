@@ -345,7 +345,6 @@ hiperbola3 <- function (h, k, a, b, horizontal ){
     
     plot(xizq , yizqpositiva , type = "l", xlim = c(h - (a + 4) , h + (a + 4)), ylim = c(k - (b + 4) , k + (b + 4)),
          xlab = "Eje X", ylab = "Eje Y")
-    #plot(xder , yderpositiva , type = "l",xlim = c(h - (a + 4) , h + (a + 4)), ylim = c(k - (b + 4) , k + (b + 4)))
     
     lines(xizq , yizqnegativa , type = "l") #agregamos parte negativa del dominio izquierdo
     lines(xder , ydernegativa , type = "l")
