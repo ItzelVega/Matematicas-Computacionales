@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{2}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -9,5 +9,10 @@
 Charles~H Lehmann.
 \newblock \emph{Geometr\'ia analítica}.
 \newblock LIMUSA, 1965.
+
+\bibitem[Vega(2021)]{repositorio}
+Itzel Vega.
+\newblock {Repositorio de Github}.
+\newblock \url {https://github.com/ItzelVega}, 2021.
 
 \end{thebibliography}
