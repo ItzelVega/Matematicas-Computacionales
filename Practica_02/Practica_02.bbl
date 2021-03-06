@@ -1,0 +1,34 @@
+\begin{thebibliography}{4}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Helminen et~al.(2011)Helminen, Salaspuro, and Vakevainen]{article3}
+Andreas Helminen, Mikko Salaspuro, and S.~Vakevainen.
+\newblock Aldh2 genotype has no significant effect on oral cavity's exposure to
+  carcinogenic acetaldehyde after rinsing the mouth with ethanol.
+\newblock \emph{Alcohol and Alcoholism}, 46:\penalty0 21--21, 09 2011.
+
+\bibitem[Trivin et~al.(2009)Trivin, Eveline, Vauléon, Cumin, Prisé, Audrain,
+  and Raoul]{article2}
+Florence Trivin, Boucher Eveline, Elodie Vauléon, Isabelle Cumin, Elisabeth
+  Prisé, Odile Audrain, and Jean-Luc Raoul.
+\newblock Management of esophageal carcinoma associated with cirrhosis: A
+  retrospective case-control analysis.
+\newblock \emph{Journal of oncology}, 2009:\penalty0 173421, 12 2009.
+\newblock \doi{10.1155/2009/173421}.
+
+\bibitem[Tuyns et~al.(1977)Tuyns, Péquignot, and Jensen]{article1}
+AJ~Tuyns, G~Péquignot, and O~Jensen.
+\newblock Esophageal cancer in ille-et-vilaine in relation to levels of alcohol
+  and tobacco consumption. risks are multiplying.
+\newblock \emph{Bulletin du cancer}, 64:\penalty0 45--60, 02 1977.
+
+\bibitem[Vega(2021)]{repositorio}
+Itzel Vega.
+\newblock {Repositorio de Github}.
+\newblock \url {https://github.com/ItzelVega}, 2021.
+
+\end{thebibliography}
