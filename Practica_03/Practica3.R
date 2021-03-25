@@ -39,6 +39,6 @@ f = function(x) x^5-100*x^4+3995*x^3-79700*x^2+794004*x-3160075
 curve(f, -200,200); abline(h=0, v=0) #gráfico para decidir un intervalo
 biseccion(f, 17, 22.2, 0.000001)
 
-###f = function(x) x^3-2*x-5
-curve(f, -2,2); abline(h=0, v=0) #gráfico para decidir un intervalo
-biseccion(f, 0.5, 2.2, 0.000001)#############
+f = function(x) x^3-2*x-5
+curve(f, -5,5); abline(h=0, v=0) #gráfico para decidir un intervalo
+biseccion(f, 2, 3, 0.000001)

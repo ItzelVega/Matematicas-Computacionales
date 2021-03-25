@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2021.2.12)  24 MAR 2021 17:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2021.2.12)  24 MAR 2021 22:57
 entering extended mode
 **./Practica_03.tex
 (Practica_03.tex
@@ -264,10 +264,10 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 <Grafi.png, id=1, 207.77625pt x 320.69812pt>
 File: Grafi.png Graphic file (type png)
 <use Grafi.png>
-Package pdftex.def Info: Grafi.png  used on input line 62.
+Package pdftex.def Info: Grafi.png  used on input line 59.
 (pdftex.def)             Requested size: 193.47578pt x 298.63763pt.
 
-Overfull \hbox (42.12598pt too wide) detected at line 68
+Overfull \hbox (42.12598pt too wide) detected at line 65
 \OML/cmm/m/it/12 m[] \OT1/cmr/m/n/12 = []\OML/cmm/m/it/12 ; m[] \OMS/cmsy/m/n/1
 2  \OML/cmm/m/it/12 x[]Error \OMS/cmsy/m/n/12  [] \OT1/cmr/m/n/12 = []\OML/cm
 m/m/it/12 Actualizacion \OT1/cmr/m/n/12 : \OML/cmm/m/it/12 f\OT1/cmr/m/n/12 (\O
@@ -278,7 +278,7 @@ m/it/12 m[]; b[] \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 b[]
  []
 
 
-Overfull \hbox (43.2982pt too wide) detected at line 73
+Overfull \hbox (43.2982pt too wide) detected at line 70
 \OML/cmm/m/it/12 m[] \OT1/cmr/m/n/12 = []\OML/cmm/m/it/12 ; m[] \OMS/cmsy/m/n/1
 2  \OML/cmm/m/it/12 x[]Error \OMS/cmsy/m/n/12  [] \OT1/cmr/m/n/12 = []\OML/cm
 m/m/it/12 Actualizacion \OT1/cmr/m/n/12 : \OML/cmm/m/it/12 f\OT1/cmr/m/n/12 (\O
@@ -294,24 +294,29 @@ m/it/12 a[]; b[] \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 m[]
 <Ec1.png, id=15, 374.90062pt x 282.30469pt>
 File: Ec1.png Graphic file (type png)
 <use Ec1.png>
-Package pdftex.def Info: Ec1.png  used on input line 93.
+Package pdftex.def Info: Ec1.png  used on input line 91.
 (pdftex.def)             Requested size: 374.8997pt x 282.30399pt.
 <Ec2.png, id=16, 374.90062pt x 282.30469pt>
 File: Ec2.png Graphic file (type png)
 <use Ec2.png>
-Package pdftex.def Info: Ec2.png  used on input line 99.
+Package pdftex.def Info: Ec2.png  used on input line 97.
+(pdftex.def)             Requested size: 374.8997pt x 282.30399pt.
+<Ec3.png, id=17, 374.90062pt x 282.30469pt>
+File: Ec3.png Graphic file (type png)
+<use Ec3.png>
+Package pdftex.def Info: Ec3.png  used on input line 103.
 (pdftex.def)             Requested size: 374.8997pt x 282.30399pt.
 
-(Practica_03.bbl) [2 <./Grafi.png>] [3 <./Ec1.png> <./Ec2.png>]
+(Practica_03.bbl) [2 <./Grafi.png>] [3 <./Ec1.png> <./Ec2.png>] [4 <./Ec3.png>]
 (Practica_03.aux
 LaTeX Info: Redefining \. on input line 10.
 LaTeX Info: Redefining \% on input line 10.
 ) ) 
 Here is how much of TeX's memory you used:
- 5006 strings out of 479616
- 73093 string characters out of 2865476
+ 5013 strings out of 479616
+ 73165 string characters out of 2865476
  566384 words of memory out of 3000000
- 22122 multiletter control sequences out of 15000+200000
+ 22128 multiletter control sequences out of 15000+200000
  412402 words of font info for 62 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  68i,7n,74p,743b,361s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -326,9 +331,9 @@ rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/MAYG/AppData/Lo
 cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/MAYG/App
 Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/
 MAYG/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on Practica_03.pdf (3 pages, 135399 bytes).
+Output written on Practica_03.pdf (4 pages, 138472 bytes).
 PDF statistics:
- 59 PDF objects out of 1000 (max. 8388607)
+ 64 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

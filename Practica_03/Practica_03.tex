@@ -51,15 +51,12 @@ El método de bisección es uno de los métodos mas usuales.\citep{metodosnumeri
 Este es uno de los métodos más sencillos y de fácil intuición, para resolver ecuaciones en una variable. Se basa en el Teorema de los Valores Intermedios, el cual establece que toda función continua $f$ en un intervalo cerrado [$a,b$] ($f \epsilon C[a,b]$) toma todos los valores que se hallan entre $f(a)$ y $f(b)$. Esto es, que todo valor entre $f(a)$ y $f(b)$ es la imagen de al menos un valor en el intervalo [$a,b$]. 
 
 
-
-
-
 El método consiste en lo siguiente: Supongamos que en el intervalo [$a,b$] hay un cero de $f$. Calculamos el punto medio $m=\frac{a+b}{2}$ del intervalo [$a,b$] A continuación calculamos $f(m)$. En caso de que $f(m)$ sea igual a cero, ya hemos encontrado la solución buscada. En caso de que no lo sea, verificamos si $f(m)$ tiene signo opuesto al de $f(a)$. Se redefine el intervalo [$a,b$] como [$a,m$] o [$m,b$] según se haya determinado en cuál de estos intervalos ocurre un cambio de signo. A este nuevo intervalo se le aplica el mismo procedimiento y así, sucesivamente, iremos encerrando la solución en un intervalo cada vez más pequeño, hasta alcanzar la precisión deseada.\citep{repositorio}
 
 En la siguiente figura se ilustra el procediemiento descrito
  \begin{figure}
  \centering
- \includegraphics [ width =0.4\textwidth ]{ Grafi.png}
+ \includegraphics [width =0.4\textwidth]{Grafi.png} \label{fig:Grafi}
  \end{figure}
  \begin{equation}
 		m_{1}=\frac{a_{1}+b_{1}}{2}, m_{1}\approx x^*
@@ -72,6 +69,7 @@ En la siguiente figura se ilustra el procediemiento descrito
 		Actualizacion: f(a_{2})\cdot f(m_{2})<0\Longrightarrow \{ a_{3}=a_{2}, b_{3}=m_{2}
 	\end{equation} 
 
+Las ecuaciones (1) y (2) representan el procediemnto descrito en la figura(\ref{fig:Grafi}).
 
 
 \subsection{Estimaci\'{o}n del error} \label{subsec:estimaciondelerror}
@@ -98,6 +96,12 @@ El error exacto en el k-ésimo paso es $|m_{k}-x^*|$. Geométricamente se puede 
 	\centering                                         
 	\includegraphics[scale = 1.0]{Ec2.png} 
 	\caption{Grafica  $f=x^5-100x^4+3995x^3-79700x^2+794004x-3160075$}            
+\end{figure}
+
+\begin{figure}
+	\centering                                         
+	\includegraphics[scale = 1.0]{Ec3.png} 
+	\caption{Grafica  $x^3-2x-5$}            
 \end{figure}
 
 \bibliography{biblio}
